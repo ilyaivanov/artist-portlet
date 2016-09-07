@@ -1,0 +1,58 @@
+    .container {
+        display: flex;
+    }
+    
+    /*Utils (common)*/    
+    .item-title {
+        padding-left: 10px;
+    }
+    
+    
+    /*Portlet (overall)*/
+    .artist-portlet {
+        width: 400px;
+    }
+    
+    
+    /*Artist (heading)*/
+    .panel-heading {
+        color: white;
+        background-color: rgb(52, 73, 94);
+        font-family: "Open Sans", sans-serif;
+        font-size: 24px;
+        font-weight: 300;
+        line-height: 26.4px;
+    }
+    
+    .panel-heading>img {
+        width: 100px;
+    }
+    
+    
+    /*Album (item)*/
+    .list-group-item {
+        font-weight: bold;
+        border: none;
+        color: white;
+    }
+    .list-group .list-group-item .list-group-item-heading{
+        color: white;
+    }
+
+    .list-group-item:hover{
+        cursor: pointer;
+        text-decoration: none;
+    }
+    
+    .list-group-item:nth-child(odd), 
+    .list-group-item:nth-child(odd):hover {
+        background-color: rgb(38, 194, 129);
+    }
+    
+    .list-group-item:nth-child(even), 
+    .list-group-item:nth-child(even):hover {
+        background-color: rgb(52, 73, 94);
+    }
+
+    
+    /*Track (subitem)*/
