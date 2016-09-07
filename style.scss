@@ -54,23 +54,30 @@ $even-item-color: rgb(52, 73, 94);
     text-decoration: none;
 }
 
-.list-group-item:nth-child(1n),
-.list-group-item:nth-child(1n):hover {
-    background-color: $odd-item-color;
-}
-
-.list-group-item:nth-child(3n),
-.list-group-item:nth-child(3n):hover {
+.list-group-item:nth-child(4n+1),
+.list-group-item:nth-child(4n+1):hover {
     background-color: $even-item-color;
 }
 
+.list-group-item:nth-child(4n+3),
+.list-group-item:nth-child(4n+3):hover {
+    background-color: $odd-item-color;
+}
+
+
 
 /*Track (subitem)*/
-
-.tracks-container {
-    border-left-color: $odd-item-color;
+.tracks-container{
     border-left-width: 3px;
     border-left-style: solid;
+}
+
+.tracks-container:nth-child(4n+4) {
+    border-left-color: $odd-item-color;
+}
+
+.tracks-container:nth-child(4n+3) {
+    border-left-color: $odd-item-color;
 }
 
 .tracks-container .list-group-item,
