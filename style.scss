@@ -4,25 +4,23 @@ $even-item-color: rgb(52, 73, 94);
 
 .container {
     display: flex;
+    margin: 50px;
 }
 
 
 /*Utils (common)*/
-
 .item-title {
     padding-left: 10px;
 }
 
 
 /*Portlet (overall)*/
-
 .artist-portlet {
     width: $width;
 }
 
 
 /*Artist (heading)*/
-
 .panel-heading {
     color: white;
     background-color: $even-item-color;
@@ -38,7 +36,6 @@ $even-item-color: rgb(52, 73, 94);
 
 
 /*Album (item)*/
-
 .list-group-item {
     font-weight: bold;
     border: none;
@@ -63,6 +60,7 @@ $even-item-color: rgb(52, 73, 94);
 .list-group-item:nth-child(even):hover {
     background-color: $even-item-color;
 }
+
 
 
 /*Track (subitem)*/
