@@ -1,8 +1,9 @@
-$width: 400px;
+$width: 300px;
 $odd-item-color: rgb(38, 194, 129);
 $even-item-color: rgb(52, 73, 94);
 .container {
     display: flex;
+    flex-wrap: wrap;
     margin: 50px;
 }
 
@@ -16,8 +17,12 @@ $even-item-color: rgb(52, 73, 94);
 
 /*Portlet (overall)*/
 
-.artist-portlet {
+.artist-portlet,
+.album-standalone,
+.track-standalone {
     width: $width;
+    min-width: $width;
+    margin: 5px;
 }
 
 
@@ -45,7 +50,8 @@ $even-item-color: rgb(52, 73, 94);
     color: white;
 }
 
-.list-group .list-group-item .list-group-item-heading {
+.list-group .list-group-item .list-group-item-heading,
+.album-standalone .list-group-item .list-group-item-heading{
     color: white;
 }
 
@@ -65,18 +71,17 @@ $even-item-color: rgb(52, 73, 94);
 }
 
 
-
 /*Track (subitem)*/
 .tracks-container{
     border-left-width: 3px;
     border-left-style: solid;
 }
 
-.tracks-container:nth-child(4n+4) {
+.tracks-container:nth-child(4n+3) {
     border-left-color: $odd-item-color;
 }
 
-.tracks-container:nth-child(4n+3) {
+.tracks-container:nth-child(4n+4) {
     border-left-color: $odd-item-color;
 }
 

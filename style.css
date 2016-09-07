@@ -1,20 +1,25 @@
 /* line 4, D:/Projects/artist-portlet/style.scss */
 .container {
   display: flex;
+  flex-wrap: wrap;
   margin: 50px; }
 
 /*Utils (common)*/
-/* line 12, D:/Projects/artist-portlet/style.scss */
+/* line 13, D:/Projects/artist-portlet/style.scss */
 .item-title {
   padding-left: 10px; }
 
 /*Portlet (overall)*/
-/* line 19, D:/Projects/artist-portlet/style.scss */
-.artist-portlet {
-  width: 400px; }
+/* line 22, D:/Projects/artist-portlet/style.scss */
+.artist-portlet,
+.album-standalone,
+.track-standalone {
+  width: 300px;
+  min-width: 300px;
+  margin: 5px; }
 
 /*Artist (heading)*/
-/* line 26, D:/Projects/artist-portlet/style.scss */
+/* line 31, D:/Projects/artist-portlet/style.scss */
 .panel-heading {
   color: white;
   background-color: #34495e;
@@ -23,57 +28,58 @@
   font-weight: 300;
   line-height: 26.4px; }
 
-/* line 35, D:/Projects/artist-portlet/style.scss */
+/* line 40, D:/Projects/artist-portlet/style.scss */
 .panel-heading > img {
   width: 100px; }
 
 /*Album (item)*/
-/* line 42, D:/Projects/artist-portlet/style.scss */
+/* line 47, D:/Projects/artist-portlet/style.scss */
 .list-group-item {
   font-weight: bold;
   border: none;
   color: white; }
 
-/* line 48, D:/Projects/artist-portlet/style.scss */
-.list-group .list-group-item .list-group-item-heading {
+/* line 54, D:/Projects/artist-portlet/style.scss */
+.list-group .list-group-item .list-group-item-heading,
+.album-standalone .list-group-item .list-group-item-heading {
   color: white; }
 
-/* line 52, D:/Projects/artist-portlet/style.scss */
+/* line 58, D:/Projects/artist-portlet/style.scss */
 .list-group-item:hover {
   cursor: pointer;
   text-decoration: none; }
 
-/* line 58, D:/Projects/artist-portlet/style.scss */
+/* line 64, D:/Projects/artist-portlet/style.scss */
 .list-group-item:nth-child(4n+1),
 .list-group-item:nth-child(4n+1):hover {
   background-color: #34495e; }
 
-/* line 63, D:/Projects/artist-portlet/style.scss */
+/* line 69, D:/Projects/artist-portlet/style.scss */
 .list-group-item:nth-child(4n+3),
 .list-group-item:nth-child(4n+3):hover {
   background-color: #26c281; }
 
 /*Track (subitem)*/
-/* line 70, D:/Projects/artist-portlet/style.scss */
+/* line 75, D:/Projects/artist-portlet/style.scss */
 .tracks-container {
   border-left-width: 3px;
   border-left-style: solid; }
 
-/* line 75, D:/Projects/artist-portlet/style.scss */
-.tracks-container:nth-child(4n+4) {
-  border-left-color: #26c281; }
-
-/* line 79, D:/Projects/artist-portlet/style.scss */
+/* line 80, D:/Projects/artist-portlet/style.scss */
 .tracks-container:nth-child(4n+3) {
   border-left-color: #26c281; }
 
 /* line 84, D:/Projects/artist-portlet/style.scss */
+.tracks-container:nth-child(4n+4) {
+  border-left-color: #26c281; }
+
+/* line 89, D:/Projects/artist-portlet/style.scss */
 .tracks-container .list-group-item,
 .tracks-container .list-group-item:hover {
   background-color: white;
   color: black; }
 
-/* line 89, D:/Projects/artist-portlet/style.scss */
+/* line 94, D:/Projects/artist-portlet/style.scss */
 .tracks-container .list-group {
   margin: 0; }
 
