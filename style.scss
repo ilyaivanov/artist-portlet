@@ -1,7 +1,6 @@
 $width: 400px;
 $odd-item-color: rgb(38, 194, 129);
 $even-item-color: rgb(52, 73, 94);
-
 .container {
     display: flex;
     margin: 50px;
@@ -9,18 +8,21 @@ $even-item-color: rgb(52, 73, 94);
 
 
 /*Utils (common)*/
+
 .item-title {
     padding-left: 10px;
 }
 
 
 /*Portlet (overall)*/
+
 .artist-portlet {
     width: $width;
 }
 
 
 /*Artist (heading)*/
+
 .panel-heading {
     color: white;
     background-color: $even-item-color;
@@ -36,6 +38,7 @@ $even-item-color: rgb(52, 73, 94);
 
 
 /*Album (item)*/
+
 .list-group-item {
     font-weight: bold;
     border: none;
@@ -51,16 +54,31 @@ $even-item-color: rgb(52, 73, 94);
     text-decoration: none;
 }
 
-.list-group-item:nth-child(odd),
-.list-group-item:nth-child(odd):hover {
+.list-group-item:nth-child(1n),
+.list-group-item:nth-child(1n):hover {
     background-color: $odd-item-color;
 }
 
-.list-group-item:nth-child(even),
-.list-group-item:nth-child(even):hover {
+.list-group-item:nth-child(3n),
+.list-group-item:nth-child(3n):hover {
     background-color: $even-item-color;
 }
 
 
-
 /*Track (subitem)*/
+
+.tracks-container {
+    border-left-color: $odd-item-color;
+    border-left-width: 3px;
+    border-left-style: solid;
+}
+
+.tracks-container .list-group-item,
+.tracks-container .list-group-item:hover {
+    background-color: white;
+    color: black;
+}
+
+.tracks-container .list-group {
+    margin: 0;
+}
